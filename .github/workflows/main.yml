@@ -34,7 +34,7 @@ jobs:
         run: |
           docker build -t todoclientapp .
           docker tag todoclientapp imrankazi90/todoclient
-          docker login -u imrankazi90 -p Jjjihan$7918
+          docker login -username imrankazi90 -password Jjjihan$7918
           docker push imrankazi90/todoclient:latest
           
   Deploy:
@@ -50,7 +50,7 @@ jobs:
         key: ${{ secrets.ACTION_PRIVATE_KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          docker login -u imrankazi90 -p Jjjihan$7918
+          docker login -username imrankazi90 -password Jjjihan$7918
           docker pull ${{secrets.DOCKER_USER}}/todoclient
           docker stop todoclientc
           docker rm todoclientc

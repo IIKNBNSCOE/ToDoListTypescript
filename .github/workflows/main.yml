@@ -54,4 +54,4 @@ jobs:
           docker pull ${{secrets.DOCKER_USER}}/todoclient
           docker stop todoclientc
           docker rm todoclientc
-          docker run --name todoclientc -d -p 9000:3002 ${{secrets.DOCKER_USER}}/todoclient
+          docker run --name todoclientc -d -p 80:3002 ${{secrets.DOCKER_USER}}/todoclient

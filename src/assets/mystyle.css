@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&display=swap');
+.ToDoList
+{
+    display:flex;
+    width:50%;
+    margin:auto auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    border-radius: 5%;
+}
+.ToDoList input,button{
+    margin-top: 1.7rem;
+    padding:1rem;
+    width:70%;
+    font-family: 'M PLUS 1', sans-serif;
+    font-size:1.3rem;
+    border-radius: 2%;
+}
+.ToDoList input{
+    border:none
+}
+.ToDoList,button{
+    padding-bottom:1rem;
+    width:40%;
+    border:none
+}
+.ToDoList button:active
+{
+    transform:scale(0.8);
+}
+.gridcontainer
+{
+    margin:auto auto;
+    margin-top:2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:30%;
+    background-color: #2196F3;
+}
+.gridcontainer .griditem
+{
+  
+  padding-top:1 rem;
+  text-align: center;
+  font-size: 1.1rem;
+  padding-left:1rem
+}
+@media(max-width:998px)
+{
+  html{
+    font-size: 70%;
+  }
+}
+
+@media(max-width:768px) and (min-width:481px)
+{
+  html{
+    font-size: 60%;
+  }
+}
+
+@media(max-width:480px) and (min-width:200px)
+{
+  html{
+    font-size: 45%;
+  }
+}

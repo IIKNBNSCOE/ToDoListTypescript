@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: tomato;
+    background-color:blue;
     border-radius: 5%;
 }
 .ToDoList input,button{
